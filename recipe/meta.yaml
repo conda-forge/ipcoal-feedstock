@@ -1,5 +1,5 @@
 {% set name = "ipcoal" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/eaton-lab/ipcoal/archive/{{ version }}.tar.gz
-  sha256: fb75072c4d1b0b51c39245eed9c5177c984ee0764be30ff24df05e957f3c8abf
+  sha256: 9d4fac7dc6ba22cd7a5e6536cb83c4ff702556293cdf4df6be59ec3dce0fce19
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -39,7 +39,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary: 'Coalescent simulations in Python'
+  summary: Coalescent simulations in Python
   description: |
     A minimalist library for simulating and analyzing genealogies
     and sequences across genomes in a phylogenetic context.
