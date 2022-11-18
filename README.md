@@ -5,9 +5,13 @@ Home: https://github.com/eaton-lab/ipcoal
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipcoal-feedstock/blob/master/LICENSE.txt)
 
 Summary: Coalescent simulations in Python
+
+Development: https://github.com/eaton-lab/ipcoal
+
+Documentation: https://ipcoal.readthedocs.io/
 
 A minimalist library for simulating and analyzing genealogies
 and sequences across genomes in a phylogenetic context.
