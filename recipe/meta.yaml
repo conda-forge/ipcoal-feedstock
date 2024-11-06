@@ -1,5 +1,5 @@
 {% set name = "ipcoal" %}
-{% set version = "0.1.5" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/eaton-lab/ipcoal/archive/{{ version }}.tar.gz
-  sha256: 9d4fac7dc6ba22cd7a5e6536cb83c4ff702556293cdf4df6be59ec3dce0fce19
+  sha256: c2b4b40f3ab022456982bdbb737884c5335ba9255974925ea5f8bdaf469659a4
 
 build:
   noarch: python
