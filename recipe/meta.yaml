@@ -11,15 +11,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - numpy
     - scipy
     - pandas
@@ -31,6 +31,8 @@ requirements:
     - msprime
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ipcoal
 
