@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/eaton-lab/ipcoal/archive/{{ version }}.tar.gz
-  sha256: 03a6947321ecbb9b9c55bcb2608d207a109c8f9cf66e171e7bfad19f49e3c016
+  sha256: f36f707aa2d7b76943ffd08223ed91e9f7f26521154bc906eabb36dcf965b734
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
